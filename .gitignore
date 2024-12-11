@@ -1,0 +1,2 @@
+# Ignorer le dossier node_modules dans le répertoire frontend
+/frontend/node_modules/
