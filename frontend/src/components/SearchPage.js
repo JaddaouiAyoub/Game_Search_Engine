@@ -22,6 +22,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 import StarIcon from '@mui/icons-material/Star';
 import axios from 'axios';
 import AddIcon from '@mui/icons-material/Add';
+import { Alert } from 'bootstrap';
 
 const StyledCard = styled(Card)(({ theme }) => ({
   height: '100%',
@@ -248,8 +249,9 @@ const SearchPage = () => {
     try {
       const response = await axios.post('http://localhost:8000/games', newGame);
       if (response.status === 200) {
-        console.log('successfully added ', response)
+        alert("Game added successfully!");
         setOpenAddGame(false);
+        console.log('successfully added ', response)
         // Optionally refresh the search results
         if (query.trim()) {
           searchGames();
