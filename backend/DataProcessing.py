@@ -14,9 +14,6 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
-import logging
-logging.basicConfig(level=logging.DEBUG)
-
 
 
 class GameDataProcessor:
@@ -597,7 +594,7 @@ class GameDataProcessor:
 
 def main():
     processor = GameDataProcessor()
-    processor.process_json_file('./rawg_games2.json')
+    processor.process_json_file('./rawg_games.json')
     print("Data processing completed!")
 
 
