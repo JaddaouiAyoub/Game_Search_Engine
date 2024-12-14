@@ -151,7 +151,7 @@ const SearchPage = () => {
     platform: '',
     rating: '',
     metacritic: '',
-    backgroundImage: '',
+    background_image: '',
   });
 
   const platforms = [
@@ -663,8 +663,8 @@ const SearchPage = () => {
               <StyledTextField
                 label="Background Image URL"
                 fullWidth
-                value={newGame.backgroundImage}
-                onChange={(e) => setNewGame({ ...newGame, backgroundImage: e.target.value })}
+                value={newGame.background_image}
+                onChange={(e) => setNewGame({ ...newGame, background_image: e.target.value })}
               />
             </Box>
           </DialogContent>

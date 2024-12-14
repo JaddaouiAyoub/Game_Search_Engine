@@ -322,7 +322,7 @@ class Game(BaseModel):
     released: str
     genre: str
     platform: str
-    backgroundImage: str
+    background_image: str
     metacritic: Optional[int]  # Permet un entier ou None
     rating: Optional[float]   # Permet un float ou None
 
